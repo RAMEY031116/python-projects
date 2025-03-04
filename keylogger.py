@@ -1,5 +1,6 @@
 import keyboard
-keyboard.write('hello handsome')
 
+keyboard.write ('this is a keylogger')
 
 print ('this is a keylogger')
+print('test again')
